@@ -1,5 +1,7 @@
 ## 第一章 Gin 基础 - 路由配置
 
+项目地址：[路由配置-GinDemo](https://github.com/Tjyy-1223/The-Way-To-Gin/tree/main/code/1-Gin%E5%9F%BA%E7%A1%80/1-1-%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE/GinDemo)
+
 Gin 是一个高效的 **Web 框架**，主要用于构建 Web 应用程序和 HTTP API。它提供了处理路由、请求、响应和中间件的功能，使得 Web 开发变得更加便捷和高效。Gin 的核心特性是高性能，能够支持高并发请求。
 
 主要功能：
@@ -48,8 +50,6 @@ func main() {
 
 
 ### 2 路由配置
-
-项目地址：[路由配置-GinDemo](https://github.com/Tjyy-1223/The-Way-To-Gin/tree/main/code/1-Gin%E5%9F%BA%E7%A1%80/1-1-%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE/GinDemo)
 
 在Gin中，路由配置是指如何定义HTTP请求与对应的处理函数之间的映射关系。Gin框架使用路由来确定接收到的HTTP请求应该由哪个处理函数来处理。具体的路由配置涉及到设置不同的HTTP方法（如 GET、POST、PUT、DELETE 等）以及请求的路径。
 
