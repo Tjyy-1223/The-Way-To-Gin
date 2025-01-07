@@ -49,6 +49,8 @@ func main() {
 
 ### 2 路由配置
 
+项目地址：[路由配置-GinDemo](https://github.com/Tjyy-1223/The-Way-To-Gin/tree/main/code/1-Gin%E5%9F%BA%E7%A1%80/1-1-%E8%B7%AF%E7%94%B1%E9%85%8D%E7%BD%AE/GinDemo)
+
 在Gin中，路由配置是指如何定义HTTP请求与对应的处理函数之间的映射关系。Gin框架使用路由来确定接收到的HTTP请求应该由哪个处理函数来处理。具体的路由配置涉及到设置不同的HTTP方法（如 GET、POST、PUT、DELETE 等）以及请求的路径。
 
 #### 2.1 基本操作

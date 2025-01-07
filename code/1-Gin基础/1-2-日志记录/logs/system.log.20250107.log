@@ -1,0 +1,2 @@
+{"client_ip":"::1","latency_time":114833,"level":"info","msg":"","req_method":"GET","req_uri":"/v1/product/add?name=a\u0026price=10","status_code":200,"time":"2025-01-07 19:32:12"}
+{"client_ip":"::1","latency_time":34667,"level":"info","msg":"","req_method":"GET","req_uri":"/v1/product/add?name=a\u0026price=10","status_code":200,"time":"2025-01-07 19:32:36"}
