@@ -255,18 +255,13 @@ func main() {
 package member
 
 import (
-	"gopkg.in/go-playground/validator.v8"
-	"reflect"
+	"github.com/go-playground/validator/v10"
 )
 
-func NameValid(
-	v *validator.Validate, topStruct reflect.Value, currentStructOrField reflect.Value,
-	field reflect.Value, fieldType reflect.Type, fieldKind reflect.Kind, param string,
-) bool {
-	if s, ok := field.Interface().(string); ok {
-		if s == "admin" {
-			return false
-		}
+func NameValid(f1 validator.FieldLevel) bool {
+	s := f1.Field().String()
+	if s == "admin" {
+		return false
 	}
 	return true
 }
@@ -368,11 +363,7 @@ func AddMember(c *gin.Context) {
 访问：`http://localhost:8080/v1/member/add?name=1`
 
 ```
-{
-    "code": -1,
-    "msg": "Key: 'Member.Age' Error:Field validation for 'Age' failed on the 'required' tag",
-    "data": null
-}
+{"code":-1,"msg":"Key: 'Member.Age' Error:Field validation for 'Age' failed on the 'required' tag","data":null}
 ```
 
 访问：`http://localhost:8080/v1/member/add?age=1`
