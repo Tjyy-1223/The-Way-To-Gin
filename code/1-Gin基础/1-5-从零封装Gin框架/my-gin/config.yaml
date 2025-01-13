@@ -1,0 +1,5 @@
+app: # 基本应用配置
+  env: local # 环境名称
+  port: 8888 # 服务监听端口号
+  app_name: gin-app # 应用名称
+  app_url: http://localhost # 应用域名
