@@ -15,6 +15,9 @@ func main() {
 	global.App.Log = bootstrap.InitializeLog()
 	global.App.Log.Info("log init success!")
 
+	// 初始化数据库
+	global.App.DB = bootstrap.InitializeDB()
+
 	r := gin.Default()
 
 	// 测试路由

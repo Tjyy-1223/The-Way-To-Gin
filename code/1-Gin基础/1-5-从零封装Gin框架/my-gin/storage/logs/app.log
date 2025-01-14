@@ -1,1 +1,39 @@
 [2025-01-14 12:57:08.741]	local.info	my-gin/main.go:16	log init success!
+[2025-01-14 23:24:51.604]	local.info	my-gin/main.go:16	log init success!
+
+2025/01/14 23:24:51 [35m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:46
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:8306: connect: connection refused
+[2025-01-14 23:24:51.605]	local.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:8306: connect: connection refused"}
+[2025-01-14 23:27:07.407]	local.info	my-gin/main.go:16	log init success!
+
+2025/01/14 23:27:07 [35m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:46
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:8306: connect: connection refused
+[2025-01-14 23:27:07.408]	local.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:8306: connect: connection refused"}
+[2025-01-14 23:27:24.564]	local.info	my-gin/main.go:16	log init success!
+
+2025/01/14 23:27:24 [35m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:46
+[0m[31m[error] [0mfailed to initialize database, got error Error 1049 (42000): Unknown database 'go-test'
+[2025-01-14 23:27:24.566]	local.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "Error 1049 (42000): Unknown database 'go-test'"}
+[2025-01-14 23:29:29.265]	local.info	my-gin/main.go:16	log init success!
+
+2025/01/14 23:29:29 [35m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:46
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+[2025-01-14 23:29:29.267]	local.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)"}
+[2025-01-14 23:37:35.927]	local.info	my-gin/main.go:16	log init success!
+
+2025/01/14 23:37:35 [35m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:46
+[0m[31m[error] [0mfailed to initialize database, got error Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+[2025-01-14 23:37:35.929]	local.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "Error 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)"}
+[2025-01-14 23:39:34.202]	local.info	my-gin/main.go:16	log init success!
+
+2025/01/14 23:39:34 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.320ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/14 23:39:34 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[4.090ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/14 23:39:34 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.628ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2025/01/14 23:39:34 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[17.138ms] [34;1m[rows:0][0m CREATE TABLE `users` (`id` bigint unsigned AUTO_INCREMENT,`name` varchar(191) NOT NULL COMMENT '用户名称',`mobile` varchar(191) NOT NULL COMMENT '用户手机号',`password` varchar(191) NOT NULL DEFAULT '' COMMENT '用户密码',`created_at` datetime NULL,`updated_at` datetime NULL,`deleted_at` datetime NULL,PRIMARY KEY (`id`),INDEX `idx_users_mobile` (`mobile`),INDEX `idx_users_deleted_at` (`deleted_at`))
