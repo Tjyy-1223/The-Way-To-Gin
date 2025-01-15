@@ -1,10 +1,8 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
 	"my-gin/bootstrap"
 	"my-gin/global"
-	"net/http"
 )
 
 func main() {
@@ -18,13 +16,17 @@ func main() {
 	// 初始化数据库
 	global.App.DB = bootstrap.InitializeDB()
 
-	r := gin.Default()
-
-	// 测试路由
-	r.GET("/ping", func(c *gin.Context) {
-		c.String(http.StatusOK, "pong")
-	})
+	// 程序关闭前，释放数据库连接
+	defer func() {
+		if global.App.DB != nil {
+			db, _ := global.App.DB.DB()
+			err := db.Close()
+			if err != nil {
+				global.App.Log.Error("failed to close the database in the process.")
+			}
+		}
+	}()
 
 	// 启动服务器
-	r.Run(":" + global.App.Config.App.Port)
+	bootstrap.RunServer()
 }
