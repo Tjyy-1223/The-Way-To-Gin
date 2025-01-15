@@ -16,6 +16,9 @@ func main() {
 	// 初始化数据库
 	global.App.DB = bootstrap.InitializeDB()
 
+	// 初始化验证器
+	bootstrap.InitializeValidator()
+
 	// 程序关闭前，释放数据库连接
 	defer func() {
 		if global.App.DB != nil {
