@@ -19,6 +19,9 @@ func main() {
 	// 初始化验证器
 	bootstrap.InitializeValidator()
 
+	// 初始化 Redis
+	global.App.Redis = bootstrap.InitializeRedis()
+
 	// 程序关闭前，释放数据库连接
 	defer func() {
 		if global.App.DB != nil {

@@ -22,13 +22,14 @@ func JWTAuth(GuardName string) gin.HandlerFunc {
 			return []byte(global.App.Config.Jwt.Secret), nil
 		})
 
-		if err != nil {
-			global.App.Log.Error(err.Error())
+		if err != nil || service.JwtService.IsInBlacklist(tokenStr) {
+			global.App.Log.Error("can't pass the jwt token validator ")
 			response.TokenFail(c)
 			c.Abort()
 			return
 		}
 
+		// 转换成自定义 service.CustomClaims
 		claims := token.Claims.(*service.CustomClaims)
 		// Token 发布者校验
 		if claims.Issuer != GuardName {
