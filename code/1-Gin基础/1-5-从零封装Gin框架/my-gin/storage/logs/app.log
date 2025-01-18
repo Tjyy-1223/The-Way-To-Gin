@@ -2284,3 +2284,128 @@
 
 2025/01/18 20:01:27 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/app/service/media.go:74
 [0m[33m[1.400ms] [34;1m[rows:1][0m INSERT INTO `media` (`disk_type`,`scr_type`,`src`,`created_at`,`updated_at`) VALUES ('local',1,'local/test/32eeb842-b82d-4845-bcc8-465e2db9b03a.jpg','2025-01-18 20:01:27.587','2025-01-18 20:01:27.587')
+[2025-01-18 21:35:45.324]	local.info	my-gin/main.go:14	log init success!
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.130ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[2.015ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.489ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.078ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.866ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.863ms] [34;1m[rows:-][0m SELECT * FROM `users` LIMIT 1
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.534ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.192ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.250ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.457ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.091ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.698ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.324ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.084ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.640ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.369ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.081ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.722ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.987ms] [34;1m[rows:-][0m SELECT * FROM `media` LIMIT 1
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.254ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.140ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.868ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 21:35:45 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.322ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+[2025-01-18 21:36:47.346]	local.error	middleware/jwt.go:28	can't pass the jwt token validator 
+[2025-01-18 21:38:18.924]	local.info	my-gin/main.go:14	log init success!
+
+2025/01/18 21:38:18 [35m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:46
+[0m[31m[error] [0mfailed to initialize database, got error dial tcp 127.0.0.1:3307: connect: connection refused
+[2025-01-18 21:38:18.925]	local.error	bootstrap/db.go:50	mysql connect failed, err:	{"err": "dial tcp 127.0.0.1:3307: connect: connection refused"}
+
+
+[31m2025/01/18 21:38:24 [Recovery] 2025/01/18 - 21:38:24 panic recovered:
+POST /api/auth/login HTTP/1.1
+Host: localhost:8888
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+Connection: keep-alive
+Content-Length: 58
+Content-Type: application/json
+Postman-Token: 562bfd2d-807e-4efa-9b80-fd7db095a949
+User-Agent: PostmanRuntime/7.43.1
+
+
+runtime error: invalid memory address or nil pointer dereference
+/opt/homebrew/Cellar/go/1.23.4/libexec/src/runtime/panic.go:262 (0x104c8e41f)
+	panicmem: panic(memoryError)
+/opt/homebrew/Cellar/go/1.23.4/libexec/src/runtime/signal_unix.go:917 (0x104c8e3ec)
+	sigpanic: panicmem()
+/Users/tianjiangyu/MyStudy/分布式系统/go/GoLang/pkg/mod/gorm.io/gorm@v1.25.12/gorm.go:406 (0x104ffc298)
+	(*DB).getInstance: if db.clone > 0 {
+/Users/tianjiangyu/MyStudy/分布式系统/go/GoLang/pkg/mod/gorm.io/gorm@v1.25.12/chainable_api.go:208 (0x104ff7bbf)
+	(*DB).Where: tx = db.getInstance()
+/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/app/service/user.go:32 (0x105144e7f)
+	(*userService).Login: err = global.App.DB.Where("mobile = ?", param.Mobile).First(&user).Error
+/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/app/controller/app/auth.go:19 (0x105145b0f)
+	Login: if err, user := service.UserService.Login(form); err != nil {
+/Users/tianjiangyu/MyStudy/分布式系统/go/GoLang/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 (0x105134aab)
+	(*Context).Next: c.handlers[c.index](c)
+/Users/tianjiangyu/MyStudy/分布式系统/go/GoLang/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102 (0x105134a8c)
+	CustomRecoveryWithWriter.func1: c.Next()
+/Users/tianjiangyu/MyStudy/分布式系统/go/GoLang/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 (0x105133e17)
+	(*Context).Next: c.handlers[c.index](c)
+/Users/tianjiangyu/MyStudy/分布式系统/go/GoLang/pkg/mod/github.com/gin-gonic/gin@v1.10.0/logger.go:249 (0x105133df4)
+	LoggerWithConfig.func1: c.Next()
+/Users/tianjiangyu/MyStudy/分布式系统/go/GoLang/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185 (0x105133253)
+	(*Context).Next: c.handlers[c.index](c)
+/Users/tianjiangyu/MyStudy/分布式系统/go/GoLang/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633 (0x105132ddc)
+	(*Engine).handleHTTPRequest: c.Next()
+/Users/tianjiangyu/MyStudy/分布式系统/go/GoLang/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589 (0x105132b23)
+	(*Engine).ServeHTTP: engine.handleHTTPRequest(c)
+/opt/homebrew/Cellar/go/1.23.4/libexec/src/net/http/server.go:3210 (0x104e6b8fb)
+	serverHandler.ServeHTTP: handler.ServeHTTP(rw, req)
+/opt/homebrew/Cellar/go/1.23.4/libexec/src/net/http/server.go:2092 (0x104e61b7b)
+	(*conn).serve: serverHandler{c.server}.ServeHTTP(w, w.req)
+/opt/homebrew/Cellar/go/1.23.4/libexec/src/runtime/asm_arm64.s:1223 (0x104c948e3)
+	goexit: MOVD	R0, R0	// NOP
+[0m

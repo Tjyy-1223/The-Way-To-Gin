@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"my-gin/global"
 	"net/http"
+	"os"
 )
 
 // Response 响应结构体
@@ -48,4 +49,22 @@ func BusinessFail(c *gin.Context, msg string) {
 
 func TokenFail(c *gin.Context) {
 	FailByError(c, global.Errors.TokenError)
+}
+
+// ServerError 添加 ServerError() 方法，作为 RecoveryFunc
+func ServerError(c *gin.Context, err interface{}) {
+	msg := "Internal Server Error"
+	// 非生产环境显示具体错误, 生产环境不适应大幅度写入日志，会浪费性能
+	if global.App.Config.App.Env != "production" && os.Getenv(gin.EnvGinMode) != gin.ReleaseMode {
+		if _, ok := err.(error); ok {
+			msg = err.(error).Error()
+		}
+	}
+
+	c.JSON(http.StatusInternalServerError, Response{
+		ErrorCode: http.StatusInternalServerError,
+		Data:      nil,
+		Message:   msg,
+	})
+	c.Abort()
 }

@@ -4,6 +4,7 @@ import (
 	"context"
 	"github.com/gin-gonic/gin"
 	"log"
+	"my-gin/app/middleware"
 	"my-gin/global"
 	"my-gin/routes"
 	"net/http"
@@ -14,7 +15,11 @@ import (
 )
 
 func setupRouter() *gin.Engine {
-	router := gin.Default()
+	if global.App.Config.App.Env == "production" {
+		gin.SetMode(gin.ReleaseMode)
+	}
+	router := gin.New()
+	router.Use(gin.Logger(), middleware.CustomRecovery(), middleware.Cors())
 
 	// 前端项目静态资源
 	router.StaticFile("/", "./static/dist/index.html")
