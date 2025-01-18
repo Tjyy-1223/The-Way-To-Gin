@@ -36,3 +36,9 @@ redis:
   port: 6379
   db: 0
   password:
+storage:
+  default: local # 默认驱动
+  disks:
+    local:
+      root_dir: ./storage/app # 本地存储根目录
+      app_url: http://localhost:8888/storage # 本地图片 url 前部

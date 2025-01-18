@@ -1657,3 +1657,630 @@
 
 2025/01/18 10:59:28 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/app/service/user.go:42
 [0m[33m[0.685ms] [34;1m[rows:1][0m SELECT * FROM `users` WHERE `users`.`id` = 3 AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+[2025-01-18 18:37:50.562]	local.info	my-gin/main.go:14	log init success!
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.393ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[12.505ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.322ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.087ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.824ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[8.246ms] [34;1m[rows:-][0m SELECT * FROM `users` LIMIT 1
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[3.133ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.113ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.863ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.351ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.072ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.519ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.256ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.062ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.511ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.341ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2025/01/18 18:37:50 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[16.044ms] [34;1m[rows:0][0m CREATE TABLE `media` (`id` bigint unsigned AUTO_INCREMENT,`disk_type` varchar(20) NOT NULL COMMENT '存储类型',`scr_type` tinyint NOT NULL COMMENT '连接类型 1-相对路径 2-外链',`src` varchar(191) NOT NULL COMMENT '资源链接',`created_at` datetime NULL,`updated_at` datetime NULL,PRIMARY KEY (`id`),INDEX `idx_media_disk_type` (`disk_type`))
+
+2025/01/18 19:06:25 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/app/service/user.go:32
+[0m[33m[2.700ms] [34;1m[rows:1][0m SELECT * FROM `users` WHERE mobile = '16678787878' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+[2025-01-18 19:09:24.768]	local.info	my-gin/main.go:14	log init success!
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.137ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.727ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.539ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.061ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.863ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.975ms] [34;1m[rows:-][0m SELECT * FROM `users` LIMIT 1
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.905ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.092ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.987ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.466ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.175ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.809ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.356ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.075ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.688ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.900ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.158ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.025ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.763ms] [34;1m[rows:-][0m SELECT * FROM `media` LIMIT 1
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.029ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.105ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.798ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:09:24 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.432ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2025/01/18 19:09:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/app/service/user.go:32
+[0m[33m[2.827ms] [34;1m[rows:1][0m SELECT * FROM `users` WHERE mobile = '16678787878' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+[2025-01-18 19:17:29.695]	local.info	my-gin/main.go:14	log init success!
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.090ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.335ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.295ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.057ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.576ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.410ms] [34;1m[rows:-][0m SELECT * FROM `users` LIMIT 1
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.781ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.067ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.580ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.240ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.103ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.483ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.500ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.119ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.039ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.624ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.096ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.909ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.362ms] [34;1m[rows:-][0m SELECT * FROM `media` LIMIT 1
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.876ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.093ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.807ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:17:29 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.363ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+[2025-01-18 19:21:57.173]	local.info	my-gin/main.go:14	log init success!
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.201ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[2.704ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.554ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.088ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.714ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.603ms] [34;1m[rows:-][0m SELECT * FROM `users` LIMIT 1
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.093ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.097ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.886ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.584ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.110ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.017ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.455ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.119ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.851ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.398ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.102ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.828ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.394ms] [34;1m[rows:-][0m SELECT * FROM `media` LIMIT 1
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.822ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.098ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.738ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:21:57 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.331ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+[2025-01-18 19:54:26.742]	local.info	my-gin/main.go:14	log init success!
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.193ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[2.664ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.578ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.101ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.602ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.244ms] [34;1m[rows:-][0m SELECT * FROM `users` LIMIT 1
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.363ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.104ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.090ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.473ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.097ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.071ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.407ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.099ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.517ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.460ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.081ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.730ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.829ms] [34;1m[rows:-][0m SELECT * FROM `media` LIMIT 1
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.910ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.090ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.748ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:54:26 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.329ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2025/01/18 19:54:35 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/app/service/user.go:32
+[0m[33m[1.526ms] [34;1m[rows:1][0m SELECT * FROM `users` WHERE mobile = '16678787878' AND `users`.`deleted_at` IS NULL ORDER BY `users`.`id` LIMIT 1
+[2025-01-18 19:58:13.999]	local.info	my-gin/main.go:14	log init success!
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.142ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.395ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.690ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.165ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.456ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.828ms] [34;1m[rows:-][0m SELECT * FROM `users` LIMIT 1
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.147ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.099ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.833ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.362ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.079ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.673ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.417ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.119ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.885ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.478ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.123ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.954ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.493ms] [34;1m[rows:-][0m SELECT * FROM `media` LIMIT 1
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.000ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.094ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.703ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:58:14 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.333ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+[2025-01-18 19:58:17.434]	local.info	my-gin/main.go:14	log init success!
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.174ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.635ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.651ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.170ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.231ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.598ms] [34;1m[rows:-][0m SELECT * FROM `users` LIMIT 1
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.361ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.162ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.183ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.511ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.138ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.075ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.407ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.107ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.816ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.418ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.115ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.817ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.383ms] [34;1m[rows:-][0m SELECT * FROM `media` LIMIT 1
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.995ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.118ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.769ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:58:17 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.321ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+[2025-01-18 19:59:53.124]	local.info	my-gin/main.go:14	log init success!
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.141ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.088ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.387ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.092ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.662ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.466ms] [34;1m[rows:-][0m SELECT * FROM `users` LIMIT 1
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.012ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.090ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.880ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.577ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.122ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.027ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.429ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.118ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.952ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.412ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.087ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.841ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.435ms] [34;1m[rows:-][0m SELECT * FROM `media` LIMIT 1
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.712ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.168ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.065ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 19:59:53 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.437ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2025/01/18 19:59:58 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/app/service/media.go:74
+[0m[33m[5.836ms] [34;1m[rows:1][0m INSERT INTO `media` (`disk_type`,`scr_type`,`src`,`created_at`,`updated_at`) VALUES ('local',1,'local/test/aeab692f-2346-45f5-9dae-3db294865c23.jpg','2025-01-18 19:59:58.291','2025-01-18 19:59:58.291')
+[2025-01-18 20:01:22.454]	local.info	my-gin/main.go:14	log init success!
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.247ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.423ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.838ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'users' AND table_type = 'BASE TABLE'
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.139ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.288ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.567ms] [34;1m[rows:-][0m SELECT * FROM `users` LIMIT 1
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.014ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'users' ORDER BY ORDINAL_POSITION
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.136ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[1.014ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.469ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_mobile'
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.134ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.938ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.446ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'users' AND index_name = 'idx_users_deleted_at'
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.134ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.914ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.477ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'go-test' AND table_name = 'media' AND table_type = 'BASE TABLE'
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.111ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.860ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.428ms] [34;1m[rows:-][0m SELECT * FROM `media` LIMIT 1
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.846ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'go-test' AND table_name = 'media' ORDER BY ORDINAL_POSITION
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.103ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.701ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'go-test%' ORDER BY SCHEMA_NAME='go-test' DESC,SCHEMA_NAME limit 1
+
+2025/01/18 20:01:22 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/bootstrap/db.go:62
+[0m[33m[0.359ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'go-test' AND table_name = 'media' AND index_name = 'idx_media_disk_type'
+
+2025/01/18 20:01:27 [32m/Users/tianjiangyu/MyStudy/Go-learning/A2-The-Way-To-Gin/code/1-Gin基础/1-5-从零封装Gin框架/my-gin/app/service/media.go:74
+[0m[33m[1.400ms] [34;1m[rows:1][0m INSERT INTO `media` (`disk_type`,`scr_type`,`src`,`created_at`,`updated_at`) VALUES ('local',1,'local/test/32eeb842-b82d-4845-bcc8-465e2db9b03a.jpg','2025-01-18 20:01:27.587','2025-01-18 20:01:27.587')
