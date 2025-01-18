@@ -2,6 +2,7 @@ package service
 
 import (
 	"context"
+	"errors"
 	"github.com/dgrijalva/jwt-go"
 	"my-gin/global"
 	"my-gin/utils"
@@ -89,4 +90,15 @@ func (jwtService *jwtService) IsInBlacklist(tokenStr string) bool {
 		return false
 	}
 	return true
+}
+
+// GetUserInfo 根据不同客户端 token ，查询不同用户表数据
+func (jwtService *jwtService) GetUserInfo(GuardName string, id string) (err error, user JwtUser) {
+	switch GuardName {
+	case AppGuardName:
+		return UserService.GetUserInfo(id)
+	default:
+		err = errors.New("guard " + GuardName + " dose not exist")
+	}
+	return
 }
